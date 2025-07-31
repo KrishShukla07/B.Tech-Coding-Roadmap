@@ -1,15 +1,15 @@
-# 🚀 B.Tech Coding Roadmap 2025
+# 🚀 Coding Roadmap 2025
 
 <div align="center">
 
-[![Futuristic Learning](https://img.shields.io/badge/Learning-2025-blueviolet?style=for-the-badge&logo=robot&logoColor=white)](https://github.com/KrishShukla07/B.Tech-Coding-Roadmap)
-[![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge&logo=statuspage&logoColor=white)](https://github.com/KrishShukla07/B.Tech-Coding-Roadmap)
+[![Futuristic Learning](https://img.shields.io/badge/Learning-2025-blueviolet?style=for-the-badge&logo=robot&logoColor=white)](https://github.com/KrishShukla07/Coding-Roadmap)
+[![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge&logo=statuspage&logoColor=white)](https://github.com/KrishShukla07/Coding-Roadmap)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Made with Love](https://img.shields.io/badge/Made%20With-🤖%20AI-ff69b4?style=for-the-badge&logo=ai&logoColor=white)](https://github.com/KrishShukla07)
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=1000&color=00FF00&center=true&vCenter=true&width=435&lines=Welcome+to+the+Future+of+Learning;Powered+by+AI+%26+Industry+Insights;Your+Path+to+Tech+Excellence;Build+%7C+Learn+%7C+Innovate" alt="Typing SVG" />
 
-### 🌟 Transforming B.Tech Students into Industry-Ready Developers
+### 🌟 Transforming Aspiring Coders into Industry-Ready Developers
 #### Your AI-Powered Learning Companion for 2025 and Beyond
 
 </div>
@@ -124,7 +124,7 @@ const techStack = {
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/KrishShukla07/B.Tech-Coding-Roadmap.git
+   git clone https://github.com/KrishShukla07/Coding-Roadmap.git
    ```
 
 2. Open `index.html` in your browser or use a local server:
@@ -176,9 +176,9 @@ graph TD
 
 <div align="center">
 
-[![Contributors](https://img.shields.io/github/contributors/KrishShukla07/B.Tech-Coding-Roadmap?style=for-the-badge&color=blueviolet)](https://github.com/KrishShukla07/B.Tech-Coding-Roadmap/graphs/contributors)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=github)](https://github.com/KrishShukla07/B.Tech-Coding-Roadmap/pulls)
-[![Community](https://img.shields.io/badge/Community-Join_Us-blue?style=for-the-badge&logo=discord)](https://github.com/KrishShukla07/B.Tech-Coding-Roadmap/discussions)
+[![Contributors](https://img.shields.io/github/contributors/KrishShukla07/Coding-Roadmap?style=for-the-badge&color=blueviolet)](https://github.com/KrishShukla07/Coding-Roadmap/graphs/contributors)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=github)](https://github.com/KrishShukla07/Coding-Roadmap/pulls)
+[![Community](https://img.shields.io/badge/Community-Join_Us-blue?style=for-the-badge&logo=discord)](https://github.com/KrishShukla07/Coding-Roadmap/discussions)
 
 </div>
 
@@ -229,7 +229,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 const connect = {
     github: "Create an Issue or PR",
     discord: "Join our AI Learning Hub",
-    email: "future@btech-roadmap.ai"
+    email: "future@coding-roadmap.ai"
 };
 ```
 
@@ -240,7 +240,7 @@ const connect = {
 
 ### Made with 🤖 & ❤️ for the Tech Leaders of Tomorrow
 
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FKrishShukla07%2FB.Tech-Coding-Roadmap&label=Visitors&labelColor=%23000000&countColor=%23ff8a65)](https://github.com/KrishShukla07/B.Tech-Coding-Roadmap)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FKrishShukla07%2FCoding-Roadmap&label=Visitors&labelColor=%23000000&countColor=%23ff8a65)](https://github.com/KrishShukla07/Coding-Roadmap)
 
 *"The best way to predict the future is to create it." - Peter Drucker*
 

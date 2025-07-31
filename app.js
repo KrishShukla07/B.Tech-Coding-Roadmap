@@ -1,4 +1,4 @@
-// B.Tech Coding Roadmap - Main Application Script
+// Coding Roadmap - Main Application Script
 
 // Global variables
 let appData = {};
