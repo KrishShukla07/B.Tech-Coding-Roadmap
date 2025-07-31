@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="B.Tech Coding Roadmap - A comprehensive 12-month learning journey for aspiring developers">
+    <title>B.Tech Coding Roadmap</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1 class="app-title">
+                <i class="fas fa-code"></i>
+                B.Tech Coding Roadmap
+            </h1>
+        </div>
+    </nav>
+
+    <!-- Side Drawer Overlay -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <!-- Side Drawer -->
+    <aside class="side-drawer" id="side-drawer" aria-label="Main navigation">
+        <div class="drawer-header">
+            <h2>Navigation</h2>
+            <button class="close-drawer-btn" id="close-drawer-btn" aria-label="Close menu">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+        <nav class="drawer-nav" role="navigation" aria-label="Main">
+            <a href="#roadmap" class="nav-item active" data-panel="roadmap">
+                <i class="fas fa-road"></i>
+                <span>Roadmap</span>
+            </a>
+            <a href="#career-tracks" class="nav-item" data-panel="career-tracks">
+                <i class="fas fa-briefcase"></i>
+                <span>Career Tracks</span>
+            </a>
+            <a href="#hackathon-calendar" class="nav-item" data-panel="hackathon-calendar">
+                <i class="fas fa-trophy"></i>
+                <span>Hackathon Calendar</span>
+            </a>
+            <a href="#resources-hub" class="nav-item" data-panel="resources-hub">
+                <i class="fas fa-book"></i>
+                <span>Resources Hub</span>
+            </a>
+            <a href="#time-management" class="nav-item" data-panel="time-management">
+                <i class="fas fa-clock"></i>
+                <span>Time Management</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content" id="main-content" role="main">
+        <div class="container">
+            <!-- Roadmap View -->
+            <section id="roadmap-view" class="panel-content active" role="tabpanel" aria-labelledby="roadmap-tab">
+                <div class="section-header">
+                    <h2>Your 12-Month Coding Journey</h2>
+                    <p>Follow this structured 6-phase path from beginner to job-ready developer</p>
+                </div>
+                <div class="roadmap-phases" id="roadmap-phases">
+                    <!-- Phases will be dynamically generated -->
+                </div>
+            </section>
+
+            <!-- Career Tracks View -->
+            <section id="career-tracks-view" class="panel-content">
+                <div class="section-header">
+                    <h2>Choose Your Career Path</h2>
+                    <p>Compare specialized tracks to find your perfect tech career match</p>
+                </div>
+                <div class="career-tracks-grid" id="career-tracks-grid">
+                    <!-- Career tracks will be dynamically generated -->
+                </div>
+            </section>
+
+            <!-- Hackathon Calendar View -->
+            <section id="hackathon-calendar-view" class="panel-content">
+                <div class="section-header">
+                    <h2>Upcoming Hackathons 2025</h2>
+                    <p>Don't miss these amazing opportunities to showcase your skills</p>
+                </div>
+                <div class="hackathons-table-container">
+                    <table class="hackathons-table" id="hackathons-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Event</th>
+                                <th>Location</th>
+                                <th>Prize</th>
+                            </tr>
+                        </thead>
+                        <tbody id="hackathons-tbody">
+                            <!-- Hackathons will be dynamically generated -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Resources Hub View -->
+            <section id="resources-hub-view" class="panel-content">
+                <div class="section-header">
+                    <h2>Learning Resources Hub</h2>
+                    <p>Curated collection of platforms, tutorials, and tools for your coding journey</p>
+                </div>
+                <div class="resources-tabs">
+                    <button class="tab-btn active" data-tab="platforms">
+                        <i class="fas fa-laptop-code"></i>
+                        Platforms
+                    </button>
+                    <button class="tab-btn" data-tab="cheat-sheets">
+                        <i class="fas fa-file-alt"></i>
+                        Cheat Sheets
+                    </button>
+                    <button class="tab-btn" data-tab="courses">
+                        <i class="fas fa-graduation-cap"></i>
+                        Courses
+                    </button>
+                </div>
+                <div class="resources-content">
+                    <div id="platforms-content" class="tab-content active">
+                        <div class="resources-grid" id="platforms-grid"></div>
+                    </div>
+                    <div id="cheat-sheets-content" class="tab-content">
+                        <div class="resources-grid" id="cheat-sheets-grid"></div>
+                    </div>
+                    <div id="courses-content" class="tab-content">
+                        <div class="resources-grid" id="courses-grid"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Time Management View -->
+            <section id="time-management-view" class="panel-content">
+                <div class="section-header">
+                    <h2>Time Management & Study Tools</h2>
+                    <p>Master your schedule and boost productivity with proven techniques</p>
+                </div>
+                
+                <div class="time-mgmt-grid">
+                    <div class="tool-card">
+                        <h3><i class="fas fa-clock"></i> Pomodoro Timer</h3>
+                        <div class="pomodoro-container">
+                            <div class="timer-display" id="timer-display">25:00</div>
+                            <div class="timer-controls">
+                                <button class="btn btn--primary" id="start-btn">Start</button>
+                                <button class="btn btn--secondary" id="stop-btn">Stop</button>
+                                <button class="btn btn--outline" id="reset-btn">Reset</button>
+                            </div>
+                            <div class="timer-status" id="timer-status">Ready to focus!</div>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <h3><i class="fas fa-list"></i> Time Management Techniques</h3>
+                        <div class="techniques-list" id="techniques-list">
+                            <!-- Techniques will be dynamically generated -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- JSON Data -->
+    <script type="application/json" id="app-data">
+    {
+      "phases": [
+        {
+          "name": "Phase 1: Python Foundation",
+          "duration": "Months 1-2",
+          "milestones": [
+            "Set up Python & VS Code",
+            "Learn syntax: variables, loops, functions",
+            "Practice on 50 HackerRank warm-ups",
+            "Build CLI grade-tracker project"
+          ],
+          "resources": [
+            {"label": "Python Docs", "url": "https://docs.python.org/3/"},
+            {"label": "freeCodeCamp Python Course", "url": "https://www.freecodecamp.org/learn"}
+          ],
+          "projects": ["Calculator", "Grade Tracker CLI"]
+        },
+        {
+          "name": "Phase 2: C++ Development",
+          "duration": "Months 3-4",
+          "milestones": [
+            "Master basics & STL",
+            "Implement 8 classic sorting algorithms",
+            "Solve 100 DSA problems on LeetCode",
+            "Mini project: Bank Management system"
+          ],
+          "resources": [
+            {"label": "GeeksforGeeks STL", "url": "https://www.geeksforgeeks.org/the-c-standard-template-library-stl/"}
+          ],
+          "projects": ["Bank Management System"]
+        },
+        {
+          "name": "Phase 3: Java & GitHub",
+          "duration": "Months 5-6",
+          "milestones": [
+            "OOP in Java",
+            "Push first 10 commits to GitHub",
+            "Build Swing GUI Library App",
+            "Complete Java certification on HackerRank"
+          ],
+          "resources": [
+            {"label": "Java Docs", "url": "https://docs.oracle.com/javase/8/docs/"}
+          ],
+          "projects": ["Library Management GUI"]
+        },
+        {
+          "name": "Phase 4: Web Development",
+          "duration": "Months 7-8",
+          "milestones": [
+            "HTML/CSS fundamentals",
+            "JavaScript ES6",
+            "React basics",
+            "Deploy personal portfolio site"
+          ],
+          "resources": [
+            {"label": "MDN Web Docs", "url": "https://developer.mozilla.org/"}
+          ],
+          "projects": ["Personal Portfolio Site"]
+        },
+        {
+          "name": "Phase 5: Projects & DSA",
+          "duration": "Months 9-10",
+          "milestones": [
+            "Complete 250 LeetCode problems",
+            "Low-level design patterns",
+            "Capstone full-stack project",
+            "Mock interviews"
+          ],
+          "resources": [
+            {"label": "LeetCode", "url": "https://leetcode.com"}
+          ],
+          "projects": ["Full-Stack Capstone"]
+        },
+        {
+          "name": "Phase 6: Specialization",
+          "duration": "Months 11-12",
+          "milestones": [
+            "Choose track & enroll in course",
+            "Build specialized project",
+            "Present portfolio",
+            "Apply for internships"
+          ],
+          "resources": [
+            {"label": "Coursera Specializations", "url": "https://www.coursera.org"}
+          ],
+          "projects": ["AI Mini-project / Secure Web App / Data Analysis Notebook"]
+        }
+      ],
+      "tracks": [
+        {
+          "name": "Software Development",
+          "timeline": "6-12 months",
+          "salaryRange": "₹4-15 LPA",
+          "keySkills": ["React", "Node.js", "AWS", "System Design"]
+        },
+        {
+          "name": "Cybersecurity",
+          "timeline": "8-14 months",
+          "salaryRange": "₹5-18 LPA",
+          "keySkills": ["Network Security", "Pen-Testing", "SIEM", "CISSP"]
+        },
+        {
+          "name": "Data Science",
+          "timeline": "10-16 months",
+          "salaryRange": "₹6-20 LPA",
+          "keySkills": ["Python", "ML", "Statistics", "Big Data"]
+        }
+      ],
+      "hackathons": [
+        {"date": "Mar 2025", "event": "Smart India Hackathon", "location": "Nationwide", "prize": "₹1 Lakh+"},
+        {"date": "Apr 2025", "event": "HackIndia 2025", "location": "15 Cities", "prize": "$150k"},
+        {"date": "May 17-18 2025", "event": "Goldman Sachs Hackathon", "location": "Virtual", "prize": "Intern Interviews"}
+      ],
+      "resourcesHub": {
+        "platforms": [
+          {"label": "LeetCode", "url": "https://leetcode.com"},
+          {"label": "HackerRank", "url": "https://www.hackerrank.com"},
+          {"label": "GeeksforGeeks", "url": "https://geeksforgeeks.org"}
+        ],
+        "cheatSheets": [
+          {"label": "Python Cheatsheet", "url": "https://www.pythoncheatsheet.org"},
+          {"label": "Git Cheatsheet", "url": "https://education.github.com/git-cheat-sheet-education.pdf"}
+        ],
+        "courses": [
+          {"label": "CS50", "url": "https://cs50.harvard.edu"},
+          {"label": "Python for Everybody", "url": "https://www.coursera.org/specializations/python"}
+        ]
+      },
+      "timeMgmt": [
+        {"technique": "Pomodoro Technique", "description": "25-minute focus + 5-minute break."},
+        {"technique": "Eisenhower Matrix", "description": "Prioritize by urgency & importance."},
+        {"technique": "Time Blocking", "description": "Allocate fixed blocks for tasks."}
+      ]
+    }
+    </script>
+
+    <script src="error-handler.js"></script>
+    <script src="test-utils.js"></script>
+    <script src="app.js"></script>
+
+    <!-- Offline support notification -->
+    <div id="offline-notification" class="notification" hidden>
+        You are currently offline. Some features may be limited.
+    </div>
+
+    <!-- Status indicator -->
+    <div id="status-indicator" class="status-indicator" hidden>
+        <div class="status-message"></div>
+    </div>
+</body>
+</html>
